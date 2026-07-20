@@ -30,7 +30,7 @@ function App() {
     try {
       // Connects securely using your hidden API Key
       const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
-      const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+      const model = genAI.getGenerativeModel({ model: "gemini-3.5-flash" });
 
       const prompt = `You are an expert Tape Ball Cricket Coach and Strategist. 
       Analyze the following match details and provide a sharp, aggressive, and highly actionable pre-match strategy for our squad. 
